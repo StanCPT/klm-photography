@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Angelo van Wyk | KLM Photography</title>
+<meta name="description" content="Portrait, family, wedding and corporate photography by Angelo van Wyk.">
+<link rel="stylesheet" href="styles.css">
+<script src="scripts.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="logo" href="#home" aria-label="Angelo van Wyk home"><img src="images/Angelo.jpeg" alt="" width="40" height="40"><span>KLM Photography</span></a>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">&#9776;</button>
+  <nav id="nav" aria-label="Main">
+    <a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+<main id="main">
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Angelo van Wyk</h1>
+    <p>Capturing real moments, timeless memories.</p>
+    <div class="cta"><a class="btn" href="#portfolio">View Portfolio</a><a class="btn btn-outline" href="#contact">Book Session</a></div>
+  </div>
+</section>
+<section id="about" class="section about">
+  <img src="images/Angelo.jpeg" alt="Portrait of Angelo van Wyk" loading="lazy" width="400" height="500">
+  <div><h2>About</h2>
+  <p>I'm Angelo, a photographer passionate about telling stories through light and emotion. From intimate portraits to big wedding days, I focus on natural, honest images you'll treasure.</p></div>
+</section>
+<section id="services" class="section">
+  <h2>Services</h2>
+  <div class="cards">
+    <article><h3>Personal Portraits</h3><p>Relaxed sessions that show who you are.</p></article>
+    <article><h3>Family Sessions</h3><p>Genuine connection, captured naturally.</p></article>
+    <article><h3>Weddings</h3><p>Full coverage of your special day.</p></article>
+    <article><h3>Corporate</h3><p>Headshots and brand imagery for business.</p></article>
+  </div>
+</section>
+<section id="portfolio" class="section">
+  <h2>Portfolio</h2>
+  <div class="filters" role="group" aria-label="Filter gallery">
+    <button class="active" data-filter="all" aria-pressed="true">All</button>
+    <button data-filter="personal" aria-pressed="false">Personal</button>
+    <button data-filter="family" aria-pressed="false">Family</button>
+    <button data-filter="weddings" aria-pressed="false">Weddings</button>
+    <button data-filter="corporate" aria-pressed="false">Corporate</button>
+  </div>
+  <div id="gallery" class="gallery" aria-live="polite"></div>
+</section>
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <form id="contact-form" novalidate>
+    <label for="name">Name</label><input id="name" name="name" required autocomplete="name">
+    <label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email">
+    <label for="type">Session type</label>
+    <select id="type" name="type"><option>Personal</option><option>Family</option><option>Wedding</option><option>Corporate</option></select>
+    <label for="message">Message</label><textarea id="message" name="message" rows="5" required></textarea>
+    <p id="form-status" role="status"></p>
+    <button class="btn" type="submit">Send Inquiry</button>
+  </form>
+</section>
+</main>
+<footer><p>&copy; <span id="year"></span> Angelo van Wyk &middot; KLM Photography</p><p><a href="#home">Back to top</a></p></footer>
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <button class="lb-close" aria-label="Close">&times;</button>
+  <img alt=""><p></p>
+</div>
+</body>
+</html>
