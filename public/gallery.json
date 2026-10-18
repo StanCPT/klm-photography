@@ -1,0 +1,9 @@
+{
+  "images": [
+    {"src": "images/Angelo.jpeg", "title": "Angelo van Wyk", "category": "personal", "featured": true},
+    {"src": "images/placeholder.svg", "title": "Personal Portrait", "category": "personal"},
+    {"src": "images/placeholder.svg", "title": "Family Session", "category": "family"},
+    {"src": "images/placeholder.svg", "title": "Wedding Day", "category": "weddings"},
+    {"src": "images/placeholder.svg", "title": "Corporate Headshot", "category": "corporate"}
+  ]
+}
